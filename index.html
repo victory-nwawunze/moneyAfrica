@@ -2,99 +2,124 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <metaname="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="money.jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Africa</title>
-</link>
+    
+</head>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
     *{
-        margin: 0;
+        
         padding: 0;
+        margin: 0;
         box-sizing: border-box;
-        font-family: 'Raleway', sans-serif;
-        /* background-color: #f9f9f9; */
+        font-family: 'Roboto', sans-serif;
     }
-  
-    .img__logo{
+    .Logo{
         width: 100%;
-        height: 100%;
+        height: 50%;
     }
-
     .container{
         width: 100%;
-        margin: 0;
+        height: 100%;
         display: flex;
-        justify-content: space-around;
-        margin-top: 10%;
         align-items: center;
+        justify-content: space-evenly;
     }
-    .bold__header__description > h1{
-        font-size: 50;
-        font-weight: bold;
-        text-transform: capitalize;
+    .description__heading__title > h1{
+        letter-spacing: 2.3;
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: bolder;
     }
-    .header__light__decription > p{
-        padding-top: 14px;
+    .description__heading__text{
+        padding-top: 20px;
+        line-height: 2;
+
     }
-    .header__buttons{
-        padding-top: 30px;
-    }
-       .btn-1 {
-    background-color: #2C89C6;
-    width: 50%;
-    height: 50%;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    margin-right: 10px;
-}
-.btn-2{
-    background-color: white;
-    font-weight: bold;
-    color: #2C89C6;
-    font-size: 15px;
-    width: 50%;
-    height: 50%;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-}
-    .header__buttons{
+    .container__buttons{
+        margin-top: 20px;
         display: flex;
         align-items: center;
     }
-    .hr__tag{
+
+    .btn-1{
         width: 50%;
-        margin-left: 20%;
-        border: 1px solid rgb(182, 170, 170);
-        
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        padding-left: 10px;
     }
-  </style>
+    .btn-2{
+         width: 50%;
+         margin-left: 20px;
+        background-color: white;
+        color: rgb(179, 179, 250);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        padding-left: 10px;
+    }
+    .images__pathners{
+        width: 100%;
+        height: 50%;
+        overflow-x: hidden;
+        padding: 10px 30px;
+    }
+    .pathnership__descriptions{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+</style>
+<body>
+    <!-- Nav -->
 
-<div class="container">
-    <div class="bold__header__description">
-    <h1>Improve your <br>financial health</h1>
-    <div class="header__light__decription">
-        <p>Lorem, ipsum dolor sit amet consectetur<br /> adipisicing elit. Quibusdam laborum sed veniam.</p>
+    <!-- Landing page -->
+    <div class="container">
+        <!-- Description title -->
+        <div class="description__heading__title">
+            <h1>Improve your <br>Financial health.</h1>
+            <!-- Description heading -->
+            <div class="description__heading__text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing dolore rem vel vero.</p>
+                <p> elit. Maiores quasi minus quis autem impedit harum dolores eius</p>
+            </div>
+            <!-- Description buttons -->
+           <div class="container__buttons">
+               <button class="btn-1">Our Services</button>
+               <button class="btn-2">Start Investing</button>
+           </div>
+        </div>
+        
+        <div class="description__image">
+            <img src="images/book-outline.svg" class="Logo"/>
+        </div>
     </div>
-    <div class="header__buttons">
-        <button class="btn-1">Our Service -></button>
-        <button class="btn-2">Our Service -></button>  
+
+    <!-- Pathnerships -->
+    <div class="pathnership__descriptions">
+        <div class="pathnership-1">
+            <img src="images/undraw_hire_re_gn5j.svg" class="images__pathners"/>
+        </div>
+        <div class="pathnership-1">
+            <img src="images/undraw_people_re_8spw.svg"class="images__pathners"/>
+        </div>
+        <div class="pathnership-1">
+            <img src="images/undraw_savings_re_eq4w.svg"class="images__pathners"/>
+        </div>
+        <div class="pathnership-1">
+            <img src="images/undraw_children_re_c37f.svg"class="images__pathners"/>
+        </div>
     </div>
-</div>
-<div class="description__logo">
-    <img src="images/book-outline.svg" class="img__logo"/>
-</div>
-</div>
 
-<br/>
-<hr  class="hr__tag"/>
 
-<h4>Also Featured On</h4>
-    <!-- ION-icons -->
+
+    <!-- IONICON -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
